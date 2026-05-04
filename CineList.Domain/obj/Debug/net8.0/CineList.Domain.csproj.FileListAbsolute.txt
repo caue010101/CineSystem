@@ -1,0 +1,11 @@
+/home/nash/CineList/CineList.Domain/bin/Debug/net8.0/CineList.Domain.deps.json
+/home/nash/CineList/CineList.Domain/bin/Debug/net8.0/CineList.Domain.dll
+/home/nash/CineList/CineList.Domain/bin/Debug/net8.0/CineList.Domain.pdb
+/home/nash/CineList/CineList.Domain/obj/Debug/net8.0/CineList.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/nash/CineList/CineList.Domain/obj/Debug/net8.0/CineList.Domain.AssemblyInfoInputs.cache
+/home/nash/CineList/CineList.Domain/obj/Debug/net8.0/CineList.Domain.AssemblyInfo.cs
+/home/nash/CineList/CineList.Domain/obj/Debug/net8.0/CineList.Domain.csproj.CoreCompileInputs.cache
+/home/nash/CineList/CineList.Domain/obj/Debug/net8.0/CineList.Domain.dll
+/home/nash/CineList/CineList.Domain/obj/Debug/net8.0/refint/CineList.Domain.dll
+/home/nash/CineList/CineList.Domain/obj/Debug/net8.0/CineList.Domain.pdb
+/home/nash/CineList/CineList.Domain/obj/Debug/net8.0/ref/CineList.Domain.dll

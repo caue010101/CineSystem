@@ -1,0 +1,165 @@
+2026-05-03 16:54:48.647 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-03 16:54:48.764 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-03 16:54:48.767 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-03 16:54:48.767 +00:00 [INF] Hosting environment: Development
+2026-05-03 16:54:48.767 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-03 16:54:49.052 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-03 16:54:49.094 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 43.7983ms
+2026-05-03 16:54:49.100 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-03 16:54:49.196 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 96.4972ms
+2026-05-03 16:54:49.220 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-03 16:54:49.224 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 4.4247ms
+2026-05-03 16:54:49.417 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-03 16:54:49.519 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.7734ms
+2026-05-03 16:55:59.075 +00:00 [INF] Application is shutting down...
+2026-05-03 16:56:30.258 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-03 16:56:30.398 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-03 16:56:30.401 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-03 16:56:30.402 +00:00 [INF] Hosting environment: Development
+2026-05-03 16:56:30.402 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-03 16:56:30.674 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-03 16:56:30.719 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 46.5129ms
+2026-05-03 16:56:30.726 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-03 16:56:30.824 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 98.439ms
+2026-05-03 16:56:30.847 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-03 16:56:30.852 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 5.0122ms
+2026-05-03 16:56:30.981 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-03 16:56:31.071 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.432ms
+2026-05-03 16:56:41.769 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/Auth/login - application/json 63
+2026-05-03 16:56:41.779 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-03 16:56:41.818 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 16:56:41.858 +00:00 [INF] Route matched with {action = "AuthUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthUser(CineList.Application.Dtos.LoginUserDto) on controller CineList.API.Controllers.AuthController (CineList.API).
+2026-05-03 16:56:41.867 +00:00 [INF] Executed action CineList.API.Controllers.AuthController.AuthUser (CineList.API) in 3.8831ms
+2026-05-03 16:56:41.867 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 16:56:41.869 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CineList.Application.Interfaces.Auth.IAuthService' while attempting to activate 'CineList.API.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-03 16:56:41.952 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/Auth/login - 500 null application/json; charset=utf-8 182.6889ms
+2026-05-03 16:57:02.349 +00:00 [INF] Application is shutting down...
+2026-05-03 17:01:32.031 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-03 17:01:32.148 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-03 17:01:32.151 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-03 17:01:32.152 +00:00 [INF] Hosting environment: Development
+2026-05-03 17:01:32.152 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-03 17:01:32.422 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-03 17:01:32.466 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 46.2083ms
+2026-05-03 17:01:32.472 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-03 17:01:32.570 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 98.2742ms
+2026-05-03 17:01:32.589 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-03 17:01:32.593 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.5487ms
+2026-05-03 17:01:32.735 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-03 17:01:32.835 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.4219ms
+2026-05-03 17:01:40.307 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/Auth/login - application/json 63
+2026-05-03 17:01:40.317 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-03 17:01:40.358 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 17:01:40.396 +00:00 [INF] Route matched with {action = "AuthUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthUser(CineList.Application.Dtos.LoginUserDto) on controller CineList.API.Controllers.AuthController (CineList.API).
+2026-05-03 17:01:40.406 +00:00 [INF] Executed action CineList.API.Controllers.AuthController.AuthUser (CineList.API) in 3.681ms
+2026-05-03 17:01:40.407 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 17:01:40.409 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CineList.Application.Interfaces.Auth.IAuthService' while attempting to activate 'CineList.API.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-03 17:01:40.493 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/Auth/login - 500 null application/json; charset=utf-8 186.1089ms
+2026-05-03 17:01:50.802 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/Auth/login - application/json 63
+2026-05-03 17:01:50.805 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 17:01:50.805 +00:00 [INF] Route matched with {action = "AuthUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthUser(CineList.Application.Dtos.LoginUserDto) on controller CineList.API.Controllers.AuthController (CineList.API).
+2026-05-03 17:01:50.806 +00:00 [INF] Executed action CineList.API.Controllers.AuthController.AuthUser (CineList.API) in 0.3798ms
+2026-05-03 17:01:50.806 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 17:01:50.807 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CineList.Application.Interfaces.Auth.IAuthService' while attempting to activate 'CineList.API.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-03 17:01:50.810 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/Auth/login - 500 null application/json; charset=utf-8 7.3081ms
+2026-05-03 17:04:02.018 +00:00 [INF] Application is shutting down...
+2026-05-03 17:50:58.193 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-03 17:50:58.351 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-03 17:50:58.354 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-03 17:50:58.355 +00:00 [INF] Hosting environment: Development
+2026-05-03 17:50:58.355 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-03 17:50:58.659 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-03 17:50:58.704 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 45.9989ms
+2026-05-03 17:50:58.711 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-03 17:50:58.808 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 98.1772ms
+2026-05-03 17:50:58.835 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-03 17:50:58.840 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 5.681ms
+2026-05-03 17:50:58.972 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-03 17:50:59.077 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 104.8086ms
+2026-05-03 17:53:02.794 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/Auth/login - application/json 63
+2026-05-03 17:53:02.804 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-03 17:53:02.844 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 17:53:02.891 +00:00 [INF] Route matched with {action = "AuthUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthUser(CineList.Application.Dtos.LoginUserDto) on controller CineList.API.Controllers.AuthController (CineList.API).
+2026-05-03 17:53:02.899 +00:00 [INF] Executed action CineList.API.Controllers.AuthController.AuthUser (CineList.API) in 3.354ms
+2026-05-03 17:53:02.900 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 17:53:02.903 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CineList.Application.Interfaces.Auth.IAuthService' while attempting to activate 'CineList.API.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-03 17:53:02.993 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/Auth/login - 400 null application/json; charset=utf-8 198.5337ms
+2026-05-03 17:53:45.622 +00:00 [INF] Application is shutting down...
+2026-05-03 18:04:44.105 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-03 18:04:44.220 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-03 18:04:44.224 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-03 18:04:44.225 +00:00 [INF] Hosting environment: Development
+2026-05-03 18:04:44.225 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-03 18:04:44.461 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-03 18:04:44.509 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 50.1874ms
+2026-05-03 18:04:44.516 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-03 18:04:44.624 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 108.545ms
+2026-05-03 18:04:44.658 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-03 18:04:44.662 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.7164ms
+2026-05-03 18:04:44.807 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-03 18:04:44.905 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.9391ms
+2026-05-03 18:04:48.996 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/Auth/login - application/json 63
+2026-05-03 18:04:49.003 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-03 18:04:49.036 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 18:04:49.068 +00:00 [INF] Route matched with {action = "AuthUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthUser(CineList.Application.Dtos.LoginUserDto) on controller CineList.API.Controllers.AuthController (CineList.API).
+2026-05-03 18:04:49.908 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-03 18:04:49.926 +00:00 [INF] Executed action CineList.API.Controllers.AuthController.AuthUser (CineList.API) in 853.3808ms
+2026-05-03 18:04:49.927 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-03 18:04:49.931 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/Auth/login - 200 null application/json; charset=utf-8 934.7823ms
+2026-05-03 18:04:56.047 +00:00 [INF] Application is shutting down...

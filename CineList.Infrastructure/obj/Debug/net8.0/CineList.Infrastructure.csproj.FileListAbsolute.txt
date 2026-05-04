@@ -1,0 +1,17 @@
+/home/nash/CineList/CineList.Infrastructure/bin/Debug/net8.0/CineList.Infrastructure.deps.json
+/home/nash/CineList/CineList.Infrastructure/bin/Debug/net8.0/CineList.Infrastructure.dll
+/home/nash/CineList/CineList.Infrastructure/bin/Debug/net8.0/CineList.Infrastructure.pdb
+/home/nash/CineList/CineList.Infrastructure/bin/Debug/net8.0/CineList.Application.dll
+/home/nash/CineList/CineList.Infrastructure/bin/Debug/net8.0/CineList.Domain.dll
+/home/nash/CineList/CineList.Infrastructure/bin/Debug/net8.0/CineList.Application.pdb
+/home/nash/CineList/CineList.Infrastructure/bin/Debug/net8.0/CineList.Domain.pdb
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/CineList.Infrastructure.csproj.AssemblyReference.cache
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/CineList.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/CineList.Infrastructure.AssemblyInfoInputs.cache
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/CineList.Infrastructure.AssemblyInfo.cs
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/CineList.Infrastructure.csproj.CoreCompileInputs.cache
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/CineList.Infrastructure.csproj.CopyComplete
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/CineList.Infrastructure.dll
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/refint/CineList.Infrastructure.dll
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/CineList.Infrastructure.pdb
+/home/nash/CineList/CineList.Infrastructure/obj/Debug/net8.0/ref/CineList.Infrastructure.dll

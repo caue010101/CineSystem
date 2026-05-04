@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Zd+x9bWfSYroAutf2XbKwiMXR4Z8rCo5qpzIIqttrlWWn4SPdiUSggwow8h0cv6zI7on0/2gS4bQTgM++HJZeA==",
+  "success": true,
+  "projectFilePath": "/home/nash/CineList/CineList.Domain/CineList.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/nash/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

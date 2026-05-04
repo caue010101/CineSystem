@@ -1,0 +1,15 @@
+/home/nash/CineList/CineList.Application/bin/Debug/net8.0/CineList.Application.deps.json
+/home/nash/CineList/CineList.Application/bin/Debug/net8.0/CineList.Application.dll
+/home/nash/CineList/CineList.Application/bin/Debug/net8.0/CineList.Application.pdb
+/home/nash/CineList/CineList.Application/bin/Debug/net8.0/CineList.Domain.dll
+/home/nash/CineList/CineList.Application/bin/Debug/net8.0/CineList.Domain.pdb
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/CineList.Application.csproj.AssemblyReference.cache
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/CineList.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/CineList.Application.AssemblyInfoInputs.cache
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/CineList.Application.AssemblyInfo.cs
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/CineList.Application.csproj.CoreCompileInputs.cache
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/CineList.Application.csproj.CopyComplete
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/CineList.Application.dll
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/refint/CineList.Application.dll
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/CineList.Application.pdb
+/home/nash/CineList/CineList.Application/obj/Debug/net8.0/ref/CineList.Application.dll
