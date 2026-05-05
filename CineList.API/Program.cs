@@ -24,6 +24,7 @@ builder.Host.UseSerilog();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddAntiforgery();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
