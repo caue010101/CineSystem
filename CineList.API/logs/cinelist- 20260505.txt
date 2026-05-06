@@ -1,0 +1,14 @@
+2026-05-05 22:06:45.078 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-05 22:06:45.229 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-05 22:06:45.233 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-05 22:06:45.233 +00:00 [INF] Hosting environment: Development
+2026-05-05 22:06:45.234 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-05 22:06:45.559 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-05 22:06:45.606 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 47.8047ms
+2026-05-05 22:06:45.613 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-05 22:06:45.730 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 117.5579ms
+2026-05-05 22:06:45.761 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-05 22:06:45.764 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.105ms
+2026-05-05 22:06:45.915 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-05 22:06:46.049 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.947ms
+2026-05-05 22:06:50.534 +00:00 [INF] Application is shutting down...

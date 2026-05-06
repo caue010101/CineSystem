@@ -109,5 +109,22 @@ namespace CineList.Application.Services
               CreatedAt: user.CreatedAt
            );
         }
+
+        public async Task<bool> DeleteUserAsync(Guid id)
+        {
+
+            var user = await _uow.Users.GetUserByIdAsync(id);
+
+            if (user == null)
+            {
+                throw new KeyNotFoundException($"User {id} not found ");
+            }
+
+            await _uow.Users.DeleteUserAsync(id);
+
+
+            return true;
+
+        }
     }
 }

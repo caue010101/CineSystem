@@ -54,6 +54,19 @@ namespace CineList.API.Controllers
             return Ok(user);
         }
 
+        [Authorize]
+        [HttpDelete]
+
+        public async Task<IActionResult> DeleteUser()
+        {
+
+            var userClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var user = await _userService.DeleteUserAsync(Guid.Parse(userClaim!));
+
+            return NoContent();
+        }
+
     }
 
 }

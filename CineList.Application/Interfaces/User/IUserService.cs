@@ -10,5 +10,6 @@ namespace CineList.Application.Interfaces
         Task<User?> GetUserByEmailAsync(string email);
         Task<ReadUserDto> AddUserAsync(CreateUserDto dto);
         Task<ReadUserDto> UpdateUserAsync(Guid id, UpdateUserDto dto);
+        Task<bool> DeleteUserAsync(Guid id);
     }
 }

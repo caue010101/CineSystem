@@ -9,5 +9,6 @@ namespace CineList.Domain.Interfaces
         Task<User?> GetUserByEmailAsync(string email);
         Task AddUserAsync(User user);
         Task UpdateUserAsync(User user);
+        Task DeleteUserAsync(Guid id);
     }
 }

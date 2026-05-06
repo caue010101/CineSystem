@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CineList.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4db15d62af9a5fecfb0f4b83b0a7a0d0c98e3e43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9fdce74f4a1bd2995ea89dd669cd68d10fc6f13")]
 [assembly: System.Reflection.AssemblyProductAttribute("CineList.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CineList.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

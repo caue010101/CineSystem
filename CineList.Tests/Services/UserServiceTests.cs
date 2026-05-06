@@ -161,6 +161,53 @@ namespace CineList.Tests.Services
 
             await act.Should().ThrowAsync<KeyNotFoundException>()
               .WithoutMessage("User not found ");
+
+        }
+
+        [Fact]
+
+        public async Task DeleteUserAsync_ShouldReturnTrue_WhenUserExists()
+        {
+
+            var id = Guid.NewGuid();
+
+            var userExists = new User
+            {
+                Id = id,
+                Name = "goja",
+                Email = "goja22@gmail.com",
+                PasswordHash = "fuba2020",
+                CreatedAt = DateTime.UtcNow
+            };
+
+            _userRepoMock
+              .Setup(r => r.GetUserByIdAsync(id))
+              .ReturnsAsync(userExists);
+
+            _userRepoMock
+              .Setup(r => r.DeleteUserAsync(It.IsAny<Guid>()))
+              .Returns(Task.CompletedTask);
+
+            var result = await _userService.DeleteUserAsync(id);
+
+            result.Should().BeTrue();
+        }
+
+        [Fact]
+
+        public async Task DeleteUserAsync_ShouldReturnFalse_WhenUserNotExists()
+        {
+
+            var id = Guid.NewGuid();
+
+            _userRepoMock
+              .Setup(r => r.GetUserByIdAsync(id))
+              .ReturnsAsync((User?)null);
+
+            var act = async () => await _userService.DeleteUserAsync(id);
+
+            await act.Should().ThrowAsync<KeyNotFoundException>()
+              .WithMessage($"User {id} not found ");
         }
     }
 }

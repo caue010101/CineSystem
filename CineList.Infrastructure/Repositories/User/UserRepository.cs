@@ -74,5 +74,13 @@ namespace CineList.Infrastructure.Repositories
             await _connection.ExecuteAsync(sql, user,
                 transaction: _uow.Transaction);
         }
+
+        public async Task DeleteUserAsync(Guid id)
+        {
+
+            const string sql = @"DELETE FROM users WHERE id = @Id";
+
+            await _connection.ExecuteAsync(sql, new { Id = id });
+        }
     }
 }
