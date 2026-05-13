@@ -1,0 +1,11 @@
+using CineList.Application.Dtos;
+
+namespace CineList.Application.Interfaces
+{
+
+    public interface ITmdbService
+    {
+        Task<IEnumerable<MovieDto?>> SearchMoviesAsync(string movie);
+        Task<MovieDto?> GetMovieByTmdbIdAsync(int tmdbId);
+    }
+}

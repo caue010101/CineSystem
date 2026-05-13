@@ -8,6 +8,7 @@ using CineList.Application.Interfaces;
 using CineList.Application.Services;
 using Npgsql;
 using CineList.Infrastructure.Service.Jwt;
+using CineList.Infrastructure.Service.Tmdb;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -32,6 +33,10 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+
+builder.Services.AddHttpClient<TmdbService>();
+builder.Services.AddScoped<ITmdbService, TmdbService>();
+builder.Services.AddScoped<IMovieService, MovieService>();
 
 builder.Services.AddScoped<IDbConnection>(sp =>
     new NpgsqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"))

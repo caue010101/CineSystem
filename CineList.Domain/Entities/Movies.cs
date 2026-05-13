@@ -1,6 +1,5 @@
 
 
-using System;
 
 namespace CineList.Domain.Entities
 {
