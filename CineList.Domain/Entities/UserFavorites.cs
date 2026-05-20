@@ -1,11 +1,8 @@
 
-
-using System;
-
 namespace CineList.Domain.Entities
 {
 
-    public class UserFavorite
+    public sealed class UserFavorite
     {
 
         public Guid Id { get; set; }

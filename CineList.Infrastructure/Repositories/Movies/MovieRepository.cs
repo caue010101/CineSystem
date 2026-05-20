@@ -50,7 +50,7 @@ namespace CineList.Infrastructure.Repositories
                                 popularity AS Popularity,
                                 created_at AS CreatedAt
                                   FROM movies
-                                    WHERE tmdb_id = TmdbId";
+                                    WHERE tmdb_id = @TmdbId";
             return await _connection.QueryFirstOrDefaultAsync<Movie>(sql, new { TmdbId = tmdbId },
                 transaction: _uow.Transaction);
         }

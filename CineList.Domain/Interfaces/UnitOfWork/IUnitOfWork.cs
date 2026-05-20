@@ -8,7 +8,9 @@ namespace CineList.Domain.Interfaces
 
         IUserRepository Users { get; }
         IMovieRepository Movies { get; }
+        IUserFavoritesRepository UserFavorites { get; }
         IDbTransaction? Transaction { get; }
+
 
 
         void BeginTransaction();

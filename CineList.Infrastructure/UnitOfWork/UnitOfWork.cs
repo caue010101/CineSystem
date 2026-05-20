@@ -12,6 +12,7 @@ namespace CineList.Infrastructure.UnitOfWork
         private IDbTransaction? _transaction;
         public IUserRepository Users { get; }
         public IMovieRepository Movies { get; }
+        public IUserFavoritesRepository UserFavorites { get; }
 
         public IDbTransaction? Transaction => _transaction;
 
@@ -20,6 +21,7 @@ namespace CineList.Infrastructure.UnitOfWork
             this._connection = connection;
             Users = new UserRepository(_connection, this);
             Movies = new MovieRepository(_connection, this);
+            UserFavorites = new UserFavoritesRepository(_connection, this);
         }
 
         public void BeginTransaction()

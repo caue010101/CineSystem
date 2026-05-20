@@ -25,7 +25,6 @@ namespace CineList.Tests.Services
 
 
             _uowMock.Setup(u => u.Users).Returns(_userRepoMock.Object);
-
             _userService = new UserService(_uowMock.Object, _loggerMock.Object);
         }
 

@@ -4,7 +4,7 @@
 namespace CineList.Domain.Entities
 {
 
-    public class Movie
+    public sealed class Movie
     {
 
         public Guid Id { get; set; }

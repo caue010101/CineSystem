@@ -2,17 +2,21 @@ using Microsoft.AspNetCore.Diagnostics;
 using CineList.Domain.Interfaces;
 using CineList.Infrastructure.UnitOfWork;
 using System.Data;
+using CineList.Infrastructure.Repositories;
 using CineList.Application.Interfaces.Jwt;
 using CineList.Application.Interfaces.Auth;
 using CineList.Application.Interfaces;
 using CineList.Application.Services;
 using Npgsql;
+using System.IdentityModel.Tokens.Jwt;
 using CineList.Infrastructure.Service.Jwt;
 using CineList.Infrastructure.Service.Tmdb;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
 Log.Logger = new LoggerConfiguration()
   .WriteTo.Console()
@@ -29,6 +33,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserFavoritesRepository, UserFavoritesRepository>();
+builder.Services.AddScoped<IUserFavoritesService, UserFavoritesService>();
 
 builder.Services.AddScoped<IJwtService, JwtService>();
 
@@ -36,7 +43,9 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddHttpClient<TmdbService>();
 builder.Services.AddScoped<ITmdbService, TmdbService>();
+
 builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
 builder.Services.AddScoped<IDbConnection>(sp =>
     new NpgsqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"))

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CineList.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+125ad02b5af8a7f372735b7fa478ca34ab3081e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf655ddd5aaa7d591b4744cd565e91cb10bfcf0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CineList.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CineList.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
