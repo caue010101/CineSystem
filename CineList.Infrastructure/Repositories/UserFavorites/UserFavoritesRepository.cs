@@ -39,6 +39,24 @@ namespace CineList.Infrastructure.Repositories
                 transaction: _uow.Transaction);
         }
 
+        public async Task<IEnumerable<Movie?>> GetFavoriteMoviesAsync(Guid userId)
+        {
+
+            const string sql = @"SELECT
+                                m.id AS Id,
+                                m.tmdb_id AS TmdbId,
+                                m.title AS Title,
+                                m.overview AS Overview,
+                                m.poster_path AS PosterPath,
+                                m.popularity AS Popularity,
+                                m.created_at AS CreatedAt
+                                  FROM user_favorites uf
+                                  INNER JOIN movies m ON m.id = uf.movie_id
+                                    WHERE uf.user_id = @UserId";
+            return await _connection.QueryAsync<Movie>(sql, new { UserId = userId },
+                transaction: _uow.Transaction);
+        }
+
         public async Task AddFavoriteAsync(Guid userId, Guid movieId)
         {
 
@@ -48,6 +66,17 @@ namespace CineList.Infrastructure.Repositories
             await _connection.ExecuteAsync(sql,
                 new { Id = Guid.NewGuid(), UserId = userId, MovieId = movieId, CreatedAt = DateTime.UtcNow },
                           transaction: _uow.Transaction);
+        }
+
+        public async Task<bool> DeleteFavoriteAsync(Guid userId, Guid movieId)
+        {
+
+            const string sql = @"DELETE FROM user_favorites
+                                 WHERE user_id = @UserId AND movie_id = @MovieId";
+            var rowsAffected = await _connection.ExecuteAsync(sql, new { UserId = userId, MovieId = movieId },
+                transaction: _uow.Transaction);
+
+            return rowsAffected > 0;
         }
     }
 }

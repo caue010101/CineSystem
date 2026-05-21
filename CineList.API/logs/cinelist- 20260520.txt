@@ -348,3 +348,21 @@ DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error
 2026-05-20 19:37:40.792 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.AddFavoriteAsync (CineList.API)'
 2026-05-20 19:37:40.799 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/UserFavorites/543 - 200 null application/json; charset=utf-8 1330.4875ms
 2026-05-20 20:25:18.100 +00:00 [INF] Application is shutting down...
+2026-05-20 23:22:54.940 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-20 23:22:55.056 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-20 23:22:55.059 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-20 23:22:55.060 +00:00 [INF] Hosting environment: Development
+2026-05-20 23:22:55.060 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-20 23:22:55.335 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-20 23:22:55.384 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 49.9933ms
+2026-05-20 23:22:55.390 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-20 23:22:55.489 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 99.4093ms
+2026-05-20 23:22:55.518 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 23:22:55.522 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.1762ms
+2026-05-20 23:22:55.654 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-20 23:22:55.763 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.8646ms
+2026-05-20 23:23:15.335 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/api/UserFavorites - null null
+2026-05-20 23:23:15.344 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-20 23:23:15.378 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/api/UserFavorites - 404 0 null 43.1381ms
+2026-05-20 23:23:15.383 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5180/api/UserFavorites, Response status code: 404
+2026-05-20 23:23:25.039 +00:00 [INF] Application is shutting down...

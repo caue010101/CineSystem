@@ -19,7 +19,7 @@ namespace CineList.API.Controllers
 
         [Authorize]
         [HttpPost("{tmdbId}")]
-        public async Task<IActionResult> AddFavoriteAsync(int tmdbId)
+        public async Task<IActionResult> AddFavoriteMovie(int tmdbId)
         {
 
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -31,14 +31,30 @@ namespace CineList.API.Controllers
         }
 
         [Authorize]
-        [HttpGet("claims")]
+        [HttpGet]
 
-        public async Task<IActionResult> GetClaimAsync()
+        public async Task<IActionResult> GetFavoriteMovies()
         {
 
-            var claims = User.Claims.Select(c => new { c.Value, c.Type });
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            return Ok(claims);
+            var user = await _userFavoritesService.GetFavoriteMoviesAsync(Guid.Parse(userId!));
+
+            return Ok(user);
+
+        }
+
+        [Authorize]
+        [HttpDelete("{tmdbId}")]
+
+        public async Task<IActionResult> DeleteFavoriteMovie(int tmdbId)
+        {
+
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            await _userFavoritesService.DeleteFavoriteAsync(Guid.Parse(userId!), tmdbId);
+
+            return Ok(new { message = $"Movie {tmdbId} deleted successfuly ", tmdbId });
         }
     }
 }

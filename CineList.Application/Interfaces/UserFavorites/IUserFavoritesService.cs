@@ -7,6 +7,9 @@ namespace CineList.Application.Interfaces
     {
 
         Task<MovieDto?> AddFavoriteAsync(Guid userId, int tmdbId);
+        Task<IEnumerable<MovieDto?>> GetFavoriteMoviesAsync(Guid userId);
+        Task<bool> DeleteFavoriteAsync(Guid userId, int tmdbId);
+
 
     }
 }

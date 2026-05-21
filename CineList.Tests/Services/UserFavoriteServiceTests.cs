@@ -7,7 +7,6 @@ using CineList.Infrastructure.Repositories;
 using CineList.Domain.Interfaces;
 using CineList.Infrastructure.Service;
 using Microsoft.Extensions.Logging;
-using CineList.Application.Dtos;
 using CineList.Domain.Entities;
 
 namespace CineList.Tests.Services
@@ -103,5 +102,86 @@ namespace CineList.Tests.Services
 
         }
 
+        [Fact]
+
+        public async Task GetFavoriteMoviesAsync_ShouldReturnMovieDto_WhenMovieExists()
+        {
+
+            var userId = Guid.NewGuid();
+            var tmdbId = 678;
+
+            _userFavoritesRepoMock
+              .Setup(m => m.GetFavoriteMoviesAsync(userId))
+              .ReturnsAsync(new List<Movie>{
+                  new Movie {
+                    TmdbId = tmdbId,
+                    Title = "batman",
+                    Overview = "filme ruim",
+                    PosterPath = "/test123",
+                    Popularity = 134
+                  },
+              });
+
+            var result = await _userFavoritesService.GetFavoriteMoviesAsync(userId);
+
+            result.Should().NotBeNullOrEmpty();
+            result.First().Title.Should().Be("batman");
+            result.First().TmdbId.Should().Be(tmdbId);
+        }
+
+        [Fact]
+
+        public async Task GetFavoriteMoviesAsync_ShouldReturnEmptyList_WhenMovieNotExists()
+        {
+
+            var userId = Guid.NewGuid();
+
+            _userFavoritesRepoMock
+              .Setup(m => m.GetFavoriteMoviesAsync(userId))
+              .ReturnsAsync(new List<Movie>());
+
+            var result = await _userFavoritesService.GetFavoriteMoviesAsync(userId);
+
+            result.Should().NotBeNull();
+        }
+
+        [Fact]
+
+        public async Task DeleteFavoriteMovieAsync_ShouldReturnTrue_WhenMovieExists()
+        {
+
+            var userId = Guid.NewGuid();
+            var tmdbId = 535;
+
+            _movieRepoMock
+              .Setup(m => m.GetMovieByTmdbIdAsync(tmdbId))
+              .ReturnsAsync(new Movie { Id = Guid.NewGuid(), TmdbId = tmdbId });
+
+            _userFavoritesRepoMock
+              .Setup(m => m.DeleteFavoriteAsync(userId, It.IsAny<Guid>()))
+              .ReturnsAsync(true);
+
+            var result = await _userFavoritesService.DeleteFavoriteAsync(userId, tmdbId);
+
+            result.Should().BeTrue();
+
+        }
+
+        [Fact]
+
+        public async Task DeleteFavoriteMovieAsync_ShouldThrowKeyNotInvalidException()
+        {
+            var userId = Guid.NewGuid();
+            var tmdbId = 646;
+
+            _userFavoritesRepoMock
+              .Setup(m => m.DeleteFavoriteAsync(userId, It.IsAny<Guid>()))
+              .ReturnsAsync(false);
+
+            var result = await _userFavoritesService.DeleteFavoriteAsync(userId, tmdbId);
+
+            result.Should().BeFalse();
+
+        }
     }
 }

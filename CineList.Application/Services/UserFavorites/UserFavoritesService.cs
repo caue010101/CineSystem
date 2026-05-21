@@ -69,5 +69,39 @@ namespace CineList.Application.Services
             );
 
         }
+
+        public async Task<IEnumerable<MovieDto?>> GetFavoriteMoviesAsync(Guid userId)
+        {
+
+            var movie = await _uow.UserFavorites.GetFavoriteMoviesAsync(userId);
+
+            if (movie == null)
+            {
+                _logger.LogWarning("Movie not favorited ");
+                return Enumerable.Empty<MovieDto>();
+            }
+
+            return movie.Select(m => new MovieDto(
+                TmdbId: m.TmdbId,
+                Title: m.Title,
+                Overview: m.Overview,
+                PosterPath: m.PosterPath,
+                Popularity: m.Popularity
+            ));
+        }
+
+        public async Task<bool> DeleteFavoriteAsync(Guid userId, int tmdbId)
+        {
+
+            var favoriteMovie = await _uow.Movies.GetMovieByTmdbIdAsync(tmdbId);
+
+            if (favoriteMovie == null)
+            {
+                _logger.LogWarning("Movie {favoriteMovie} not found ", favoriteMovie?.Id);
+                return false;
+            }
+
+            return await _uow.UserFavorites.DeleteFavoriteAsync(userId, favoriteMovie.Id);
+        }
     }
 }

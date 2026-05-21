@@ -1,0 +1,282 @@
+2026-05-21 19:53:10.881 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 19:53:11.015 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 19:53:11.019 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 19:53:11.019 +00:00 [INF] Hosting environment: Development
+2026-05-21 19:53:11.019 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 19:53:11.274 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 19:53:11.318 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 45.7732ms
+2026-05-21 19:53:11.326 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 19:53:11.424 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 98.5615ms
+2026-05-21 19:53:11.455 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 19:53:11.459 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 4.1586ms
+2026-05-21 19:53:11.584 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 19:53:11.682 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.8959ms
+2026-05-21 19:53:28.033 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/Auth/login - application/json 63
+2026-05-21 19:53:28.044 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 19:53:28.079 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-21 19:53:28.120 +00:00 [INF] Route matched with {action = "AuthUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthUser(CineList.Application.Dtos.LoginUserDto) on controller CineList.API.Controllers.AuthController (CineList.API).
+2026-05-21 19:53:29.265 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-21 19:53:29.288 +00:00 [INF] Executed action CineList.API.Controllers.AuthController.AuthUser (CineList.API) in 1161.6769ms
+2026-05-21 19:53:29.289 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-21 19:53:29.295 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/Auth/login - 200 null application/json; charset=utf-8 1261.2853ms
+2026-05-21 19:54:23.191 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/api/UserFavorites - null null
+2026-05-21 19:54:23.265 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/api/UserFavorites - 404 0 null 73.9265ms
+2026-05-21 19:54:23.266 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5180/api/UserFavorites, Response status code: 404
+2026-05-21 19:55:07.806 +00:00 [INF] Application is shutting down...
+2026-05-21 19:55:52.007 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 19:55:52.120 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 19:55:52.122 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 19:55:52.123 +00:00 [INF] Hosting environment: Development
+2026-05-21 19:55:52.123 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 19:55:52.372 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 19:55:52.417 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 46.2562ms
+2026-05-21 19:55:52.424 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 19:55:52.523 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 99.3885ms
+2026-05-21 19:55:52.554 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 19:55:52.557 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 2.2975ms
+2026-05-21 19:55:52.670 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 19:55:52.761 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.8112ms
+2026-05-21 19:56:02.756 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/api/UserFavorites - null null
+2026-05-21 19:56:02.765 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 19:56:02.880 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.UserFavoritesController.GetFavoriteMovies (CineList.API)'
+2026-05-21 19:56:02.914 +00:00 [INF] Route matched with {action = "GetFavoriteMovies", controller = "UserFavorites"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFavoriteMovies() on controller CineList.API.Controllers.UserFavoritesController (CineList.API).
+2026-05-21 19:56:03.372 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CineList.Domain.Entities.Movie, CineList.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CineList.Application.Dtos.MovieDto, CineList.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-21 19:56:03.463 +00:00 [INF] Executed action CineList.API.Controllers.UserFavoritesController.GetFavoriteMovies (CineList.API) in 542.9269ms
+2026-05-21 19:56:03.465 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.GetFavoriteMovies (CineList.API)'
+2026-05-21 19:56:03.474 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/api/UserFavorites - 200 null application/json; charset=utf-8 717.8601ms
+2026-05-21 19:56:26.188 +00:00 [INF] Application is shutting down...
+2026-05-21 19:59:03.788 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 19:59:03.905 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 19:59:03.908 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 19:59:03.909 +00:00 [INF] Hosting environment: Development
+2026-05-21 19:59:03.909 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 19:59:04.143 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 19:59:04.187 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 45.2498ms
+2026-05-21 19:59:04.194 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 19:59:04.293 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 99.1234ms
+2026-05-21 19:59:04.321 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 19:59:04.323 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 2.5981ms
+2026-05-21 19:59:04.474 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 19:59:04.586 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.1468ms
+2026-05-21 19:59:14.354 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/api/UserFavorites - null null
+2026-05-21 19:59:14.364 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 19:59:14.486 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.UserFavoritesController.GetFavoriteMovies (CineList.API)'
+2026-05-21 19:59:14.526 +00:00 [INF] Route matched with {action = "GetFavoriteMovies", controller = "UserFavorites"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFavoriteMovies() on controller CineList.API.Controllers.UserFavoritesController (CineList.API).
+2026-05-21 19:59:14.983 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CineList.Domain.Entities.Movie, CineList.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CineList.Application.Dtos.MovieDto, CineList.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-21 19:59:15.070 +00:00 [INF] Executed action CineList.API.Controllers.UserFavoritesController.GetFavoriteMovies (CineList.API) in 538.3967ms
+2026-05-21 19:59:15.072 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.GetFavoriteMovies (CineList.API)'
+2026-05-21 19:59:15.080 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/api/UserFavorites - 200 null application/json; charset=utf-8 725.9489ms
+2026-05-21 20:05:10.898 +00:00 [INF] Application is shutting down...
+2026-05-21 22:26:59.493 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 22:26:59.605 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 22:26:59.608 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 22:26:59.608 +00:00 [INF] Hosting environment: Development
+2026-05-21 22:26:59.609 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 22:26:59.908 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 22:26:59.951 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 44.2286ms
+2026-05-21 22:26:59.957 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 22:27:00.055 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 98.6844ms
+2026-05-21 22:27:00.086 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 22:27:00.089 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.6991ms
+2026-05-21 22:27:00.233 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 22:27:00.337 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.3573ms
+2026-05-21 22:30:15.759 +00:00 [INF] Application is shutting down...
+2026-05-21 22:34:21.586 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 22:34:21.737 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 22:34:21.740 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 22:34:21.741 +00:00 [INF] Hosting environment: Development
+2026-05-21 22:34:21.741 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 22:34:22.080 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 22:34:22.140 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 61.3149ms
+2026-05-21 22:34:22.148 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 22:34:22.284 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 136.8627ms
+2026-05-21 22:34:22.316 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 22:34:22.320 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.2305ms
+2026-05-21 22:34:22.474 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 22:34:22.604 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.9628ms
+2026-05-21 22:34:47.709 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/Auth/login - application/json 63
+2026-05-21 22:34:47.718 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 22:34:47.752 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-21 22:34:47.789 +00:00 [INF] Route matched with {action = "AuthUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthUser(CineList.Application.Dtos.LoginUserDto) on controller CineList.API.Controllers.AuthController (CineList.API).
+2026-05-21 22:34:48.863 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-21 22:34:48.887 +00:00 [INF] Executed action CineList.API.Controllers.AuthController.AuthUser (CineList.API) in 1092.4695ms
+2026-05-21 22:34:48.888 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-21 22:34:48.893 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/Auth/login - 200 null application/json; charset=utf-8 1183.6852ms
+2026-05-21 22:39:35.753 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/2ca7ecb4-ce52-4c69-ab48-1520-cf0ea142 - null null
+2026-05-21 22:39:35.758 +00:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-05-21 22:39:35.759 +00:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-05-21 22:39:35.759 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/2ca7ecb4-ce52-4c69-ab48-1520-cf0ea142 - 405 0 null 6.0345ms
+2026-05-21 22:39:58.835 +00:00 [INF] Application is shutting down...
+2026-05-21 22:41:05.394 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 22:41:05.508 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 22:41:05.511 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 22:41:05.512 +00:00 [INF] Hosting environment: Development
+2026-05-21 22:41:05.512 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 22:41:05.744 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 22:41:05.789 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 46.5371ms
+2026-05-21 22:41:05.795 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 22:41:05.890 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 95.0945ms
+2026-05-21 22:41:05.912 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 22:41:05.916 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.6114ms
+2026-05-21 22:41:06.078 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 22:41:06.185 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.0409ms
+2026-05-21 22:41:15.812 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/2ca7ecb4-ce52-4c69-ab48-1520-cf0ea142 - null null
+2026-05-21 22:41:15.822 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 22:41:15.859 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-21 22:41:15.867 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-21 22:41:15.867 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/2ca7ecb4-ce52-4c69-ab48-1520-cf0ea142 - 401 0 null 54.8608ms
+2026-05-21 22:41:24.112 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/2ca7ecb4-ce52-4c69-ab48-1520-cf0ea142 - null null
+2026-05-21 22:41:24.188 +00:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '21/05/2026 21:53:29', Current time (UTC): '21/05/2026 22:41:24'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-05-21 22:41:24.213 +00:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '21/05/2026 21:53:29', Current time (UTC): '21/05/2026 22:41:24'.
+2026-05-21 22:41:24.216 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-21 22:41:24.221 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-21 22:41:24.221 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/2ca7ecb4-ce52-4c69-ab48-1520-cf0ea142 - 401 0 null 109.83ms
+2026-05-21 22:41:48.600 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/Auth/login - application/json 63
+2026-05-21 22:41:48.609 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-21 22:41:48.653 +00:00 [INF] Route matched with {action = "AuthUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AuthUser(CineList.Application.Dtos.LoginUserDto) on controller CineList.API.Controllers.AuthController (CineList.API).
+2026-05-21 22:41:49.696 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-21 22:41:49.718 +00:00 [INF] Executed action CineList.API.Controllers.AuthController.AuthUser (CineList.API) in 1059.9941ms
+2026-05-21 22:41:49.719 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.AuthController.AuthUser (CineList.API)'
+2026-05-21 22:41:49.725 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/Auth/login - 200 null application/json; charset=utf-8 1125.2416ms
+2026-05-21 22:42:09.707 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/2ca7ecb4-ce52-4c69-ab48-1520-cf0ea142 - null null
+2026-05-21 22:42:09.727 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 22:42:09.737 +00:00 [INF] Route matched with {action = "DeleteFavoriteMovie", controller = "UserFavorites"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteFavoriteMovie(System.Guid) on controller CineList.API.Controllers.UserFavoritesController (CineList.API).
+2026-05-21 22:42:09.751 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-05-21 22:42:09.794 +00:00 [INF] Executed action CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API) in 56.8154ms
+2026-05-21 22:42:09.794 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 22:42:09.795 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/2ca7ecb4-ce52-4c69-ab48-1520-cf0ea142 - 400 null application/problem+json; charset=utf-8 87.8425ms
+2026-05-21 22:47:45.641 +00:00 [INF] Application is shutting down...
+2026-05-21 23:09:56.042 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 23:09:56.151 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 23:09:56.154 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 23:09:56.155 +00:00 [INF] Hosting environment: Development
+2026-05-21 23:09:56.155 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 23:09:56.374 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 23:09:56.414 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 40.9913ms
+2026-05-21 23:09:56.422 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 23:09:56.513 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 91.7813ms
+2026-05-21 23:09:56.541 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 23:09:56.544 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.2075ms
+2026-05-21 23:09:56.659 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 23:09:56.781 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 122.6602ms
+2026-05-21 23:13:38.967 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - null null
+2026-05-21 23:13:38.978 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 23:13:39.089 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:13:39.129 +00:00 [INF] Route matched with {action = "DeleteFavoriteMovie", controller = "UserFavorites"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteFavoriteMovie(Int32) on controller CineList.API.Controllers.UserFavoritesController (CineList.API).
+2026-05-21 23:13:39.543 +00:00 [WRN] Movie 0 not found 
+2026-05-21 23:13:39.558 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-21 23:13:39.622 +00:00 [INF] Executed action CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API) in 486.1858ms
+2026-05-21 23:13:39.623 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:13:39.631 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - 200 null application/json; charset=utf-8 664.243ms
+2026-05-21 23:15:33.481 +00:00 [INF] Application is shutting down...
+2026-05-21 23:19:41.448 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 23:19:41.560 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 23:19:41.562 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 23:19:41.563 +00:00 [INF] Hosting environment: Development
+2026-05-21 23:19:41.563 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 23:19:41.815 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 23:19:41.859 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 46.451ms
+2026-05-21 23:19:41.867 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 23:19:41.958 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 91.7328ms
+2026-05-21 23:19:41.987 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 23:19:41.991 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.9862ms
+2026-05-21 23:19:42.129 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 23:19:42.251 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 121.8277ms
+2026-05-21 23:24:57.374 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - null null
+2026-05-21 23:24:57.383 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 23:24:57.494 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:24:57.536 +00:00 [INF] Route matched with {action = "DeleteFavoriteMovie", controller = "UserFavorites"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteFavoriteMovie(Int32) on controller CineList.API.Controllers.UserFavoritesController (CineList.API).
+2026-05-21 23:24:57.915 +00:00 [WRN] Movie 0 not found 
+2026-05-21 23:24:57.927 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-21 23:24:57.994 +00:00 [INF] Executed action CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API) in 450.8858ms
+2026-05-21 23:24:57.995 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:24:58.002 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - 200 null application/json; charset=utf-8 628.2207ms
+2026-05-21 23:26:40.045 +00:00 [INF] Application is shutting down...
+2026-05-21 23:28:49.310 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 23:28:49.435 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 23:28:49.439 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 23:28:49.439 +00:00 [INF] Hosting environment: Development
+2026-05-21 23:28:49.440 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 23:28:49.675 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 23:28:49.717 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 43.553ms
+2026-05-21 23:28:49.723 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 23:28:49.816 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 93.2734ms
+2026-05-21 23:28:49.843 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 23:28:49.846 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.2081ms
+2026-05-21 23:28:49.970 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 23:28:50.090 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.2998ms
+2026-05-21 23:29:05.658 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - null null
+2026-05-21 23:29:05.668 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 23:29:05.781 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:29:05.825 +00:00 [INF] Route matched with {action = "DeleteFavoriteMovie", controller = "UserFavorites"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteFavoriteMovie(Int32) on controller CineList.API.Controllers.UserFavoritesController (CineList.API).
+2026-05-21 23:29:06.219 +00:00 [WRN] Movie null not found 
+2026-05-21 23:29:06.231 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-21 23:29:06.301 +00:00 [INF] Executed action CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API) in 468.8314ms
+2026-05-21 23:29:06.302 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:29:06.309 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - 200 null application/json; charset=utf-8 651.0057ms
+2026-05-21 23:29:16.650 +00:00 [INF] Application is shutting down...
+2026-05-21 23:29:50.342 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 23:29:50.449 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 23:29:50.452 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 23:29:50.453 +00:00 [INF] Hosting environment: Development
+2026-05-21 23:29:50.453 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 23:29:50.664 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 23:29:50.707 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 44.1073ms
+2026-05-21 23:29:50.713 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 23:29:50.808 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 94.755ms
+2026-05-21 23:29:50.827 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 23:29:50.830 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 2.3921ms
+2026-05-21 23:29:50.938 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 23:29:51.030 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.1356ms
+2026-05-21 23:30:10.648 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - null null
+2026-05-21 23:30:10.657 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 23:30:10.768 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:30:10.808 +00:00 [INF] Route matched with {action = "DeleteFavoriteMovie", controller = "UserFavorites"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteFavoriteMovie(Int32) on controller CineList.API.Controllers.UserFavoritesController (CineList.API).
+2026-05-21 23:30:11.255 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-21 23:30:11.328 +00:00 [INF] Executed action CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API) in 511.1863ms
+2026-05-21 23:30:11.329 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:30:11.335 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - 200 null application/json; charset=utf-8 687.1079ms
+2026-05-21 23:32:57.131 +00:00 [INF] Application is shutting down...
+2026-05-21 23:33:35.529 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 23:33:35.638 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 23:33:35.641 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 23:33:35.642 +00:00 [INF] Hosting environment: Development
+2026-05-21 23:33:35.642 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 23:33:35.872 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 23:33:35.915 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 44.806ms
+2026-05-21 23:33:35.922 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 23:33:36.019 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 97.7949ms
+2026-05-21 23:33:36.044 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 23:33:36.048 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.8322ms
+2026-05-21 23:33:36.161 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 23:33:36.290 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.5973ms
+2026-05-21 23:33:56.663 +00:00 [INF] Application is shutting down...
+2026-05-21 23:34:09.199 +00:00 [INF] User profile is available. Using '/home/nash/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 23:34:09.346 +00:00 [INF] Now listening on: http://localhost:5180
+2026-05-21 23:34:09.350 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 23:34:09.351 +00:00 [INF] Hosting environment: Development
+2026-05-21 23:34:09.351 +00:00 [INF] Content root path: /home/nash/CineList/CineList.API
+2026-05-21 23:34:09.619 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2026-05-21 23:34:09.670 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 53.7204ms
+2026-05-21 23:34:09.678 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2026-05-21 23:34:09.789 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 111.5564ms
+2026-05-21 23:34:09.810 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-21 23:34:09.813 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/_framework/aspnetcore-browser-refresh.js - 200 13424 application/javascript; charset=utf-8 3.6923ms
+2026-05-21 23:34:09.921 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2026-05-21 23:34:10.017 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.1187ms
+2026-05-21 23:34:33.589 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - null null
+2026-05-21 23:34:33.598 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-21 23:34:33.719 +00:00 [INF] Executing endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:34:33.762 +00:00 [INF] Route matched with {action = "DeleteFavoriteMovie", controller = "UserFavorites"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteFavoriteMovie(Int32) on controller CineList.API.Controllers.UserFavoritesController (CineList.API).
+2026-05-21 23:34:34.220 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-21 23:34:34.292 +00:00 [INF] Executed action CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API) in 523.9106ms
+2026-05-21 23:34:34.294 +00:00 [INF] Executed endpoint 'CineList.API.Controllers.UserFavoritesController.DeleteFavoriteMovie (CineList.API)'
+2026-05-21 23:34:34.299 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5180/api/UserFavorites/543 - 200 null application/json; charset=utf-8 710.1559ms
+2026-05-21 23:35:22.366 +00:00 [INF] Application is shutting down...
